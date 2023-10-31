@@ -4,6 +4,7 @@
 # encodes password by shifting each digit up 3 then storing it in a new variable
 # the function takes the parameter "password" as the user input in the main function
 def encode(password):
+    
     encoded_password = ""  # empty string which will hold the new encoded password
 
     for digit in password:  # iterates over each digit in the password
@@ -18,6 +19,7 @@ def encode(password):
 # decodes the password by reversing what the encoded function does
 # takes the encoded password as a parameter and returns the original password
 def decode(encoded_password):
+
     decoded_password = ""  # empty string which will hold the decoded password
 
     for digit in encoded_password:  # iterates over each digit in the encoded password
@@ -31,6 +33,7 @@ def decode(encoded_password):
 
 # displays the menu of options for the user to choose from
 def display_menu():
+
     print("Menu")
     print("-------------")
     print("1. Encode")
@@ -40,6 +43,7 @@ def display_menu():
 
 # main function
 def main():
+
     encoded_password = None
 
     # loops until user inputs 3
